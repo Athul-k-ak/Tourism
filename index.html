@@ -53,7 +53,7 @@
         <h2 id="destination">Top Destinations in Each Districts</h2>
         <ul>
             <!-- Thiruvananthapuram -->
-            <section id="Thiruvananthapuram">
+            <section id="thiruvananthapuram">
             <li>
                 <h3>Thiruvananthapuram</h3>
                 <p>The capital city of Kerala, Thiruvananthapuram is known for its rich history and culture. Some of the must-visit places here include the :</p>
@@ -309,19 +309,20 @@
             </section><br>
         </ul>
         <hr>
-        <center><h2 id="contact">Contact Us</h2></center>
+        
         <fieldset>
+            <legend align="center"><h2 id="contact">Contact Us</h2></legend>
             
-            <form action="#"  cellspacing="10" cellpadding="5">
-                <label for="">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" name="name" id="name" pattern="[a-zA-Z0-9_]{5,15}"><br><br>
-                <label for="">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="email" name="email" id="email" required ><br><br>
-                <label for="">Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="number" name="Phone" id="number" required><br><br>
-                <label for="">Password</label>
-                <input type="password" name="password" id="password" required><br><br>
-                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            <form action="#">
+              <b>  <label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name" id="name" pattern="[a-zA-Z0-9_]{5,15}" title="write english alphabets A-Z a-z, minimum 5 letters" required><br><br>
+                <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" id="email" required  title="Give a valid email include @gmail.com"><br><br>
+                <label for="number">Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="tel" name="Phone" id="number" required title="write only numbers"><br><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(.{8,})" required title=" - At least 1 digit  - At least 1 lowercase letter  - At least 1 uppercase letter  - At least 1 special character  - Minimum 8 characters"><br><br>
+                <i class="fa fa-eye-slash" aria-hidden="true"></i></b>
                 <button>Submit</button>
             </form>
 
