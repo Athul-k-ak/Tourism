@@ -11,12 +11,12 @@
         <center><img src="./images/Kerala.jpg" alt="" height="80px" id="top"></center>
         <nav>
             
-              <a href="#" id="home">Home</a>&nbsp;&nbsp;
-             <b> <a href="#destination">Destination</a></b>&nbsp;&nbsp;
-             <a href="#contact">Contact Us</a>&nbsp;&nbsp;
-
-              <button>Login</button>&nbsp;&nbsp;
-              <button>Signup</button>&nbsp;&nbsp;
+            <a href="#" id="home">Home</a>&nbsp;&nbsp;
+            <b> <a href="#destination">Destination</a></b>&nbsp;&nbsp;
+            <a href="#culture">Culture</a>&nbsp;&nbsp;
+            <a href="#contact">Contact Us</a>&nbsp;&nbsp;
+            <button>Login</button>&nbsp;&nbsp;
+            <button>Signup</button>&nbsp;&nbsp;
             
         </nav>
         <br>
@@ -38,6 +38,7 @@
         <hr>
     </header>
     <main>
+        <!-- About  -->
        <center> <h1>Tropical Paradise</h1>
         <p><b> Kerala</b> stuns with serene beaches, verdant jungles, and cascading waterfalls.</p></center>
         <h2 id="about">About Kerala</h2>
@@ -46,8 +47,18 @@
         <p>Houseboat Paradise:  A quintessential Kerala experience is a cruise on a traditional houseboat. Glide through the palm-fringed canals, spotting local village life and witnessing the beauty of the Kuttanad rice fields.  Enjoy the tranquility of the backwaters and soak in the stunning natural beauty of Kerala.</p>
         <p>Festivals and Artforms:  Kerala's vibrant culture comes alive in its numerous festivals. Witness the spectacular Theyyam performances with their elaborate costumes and ritualistic dances, or be enthralled by the snake boat races, a test of speed and skill. Kerala is also known for its classical dance forms like Kathakali and Mohiniyattam, which tell captivating stories through movement and music.</p>
        </blockquote><br>
+       <center> <img src="./images/kerala_map.png" alt=""></center>
 
-      <center> <img src="./images/kerala_map.png" alt=""></center>
+        <!-- Culture -->
+
+      <h2 id="culture">Culture</h2>
+      <blockquote><p>Folk art refers to all the different forms of art that define the culture and heritage of a place. It can simply be defined as the expression of the community life of a region. The folk arts of Kerala are divided into two parts the first one being ritualistic and the second one being non- ritualistic. It is a part of the folk culture and popular culture of Kerala. </p>
+        <p>Ritualistic arts are different forms of art like songs, paintings, dances etc based on religious beliefs or beliefs related to deities. The ritualistic folk art of Kerala is divided into two parts: devotional and magical. Folk arts are dedicated to a particular god or goddess. Some of the devotional folk arts are thirayattam, Anarkali theyyam, etc.</p>
+        <p> Magical folk arts are performed for a particular purpose for example to remove evil spirits, to beget children, etc. Some examples of magical folk arts of Kerala are pambu thullal, poopada thullal, malayankettu, etc. Literature of Kerala.One of the most integral parts of the heritage of Kerala is its literature. Literature of Kerala includes Sangam and Malayalam literature. In ancient times Sangam literature was prominent in the state of Kerala. Malayalam which is a language now used in this state is counted among the classical languages of the country. Malayalam literature has been awarded six Jnanpith awards.</p></blockquote><br>
+        <img src="./images/theyyam.jpeg" alt="" height="310px" width="365px">&nbsp;&nbsp;
+        <img src="./images/kathakali.jpg" alt="" height="310px" width="365px">&nbsp;&nbsp;
+        <img src="./images/vallamkali.jpeg" alt="" height="310px" width="365px">&nbsp;&nbsp;
+
         <!--List all District destinations  -->
         
         <h2 id="destination">Top Destinations in Each Districts</h2>
@@ -308,16 +319,24 @@
                 </li>
             </section><br>
         </ul>
+
+
         <hr>
         <p><b>Learn more about Kerala : <a href="#about">click here</a></b></p>
         <p><b>Back to top : <a href="#top"> click here</a></b></p>
+
+        <!-- contact us form  -->
         
         <fieldset>
             <legend align="center"><h2 id="contact">Contact Us</h2></legend>
             
             <form action="#">
+                <!-- name -->
              <b><label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" name="name" id="name" pattern="[a-zA-Z0-9_]{5,15}" title="write english alphabets A-Z a-z, minimum 5 letters" required><br><br>
+                
+                <!-- gender -->
+
                 <label>Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <label for="male">Male:</label>
@@ -328,6 +347,8 @@
 
                     <label for="other">Other:</label>
                     <input type="radio" id="other" name="gender" value="other" required><br><br>
+
+                <!--district  -->
                 <label for="district">District</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <select name="district" id="district" required>
                     <option value="">Select a district</option>
@@ -347,22 +368,32 @@
                     <option value="district">Thiruvananthapuram</option>
                 </select><br><br>
                 
-
+                <!-- email -->
                 <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="email" name="email" id="email" required  title="Give a valid email include @gmail.com"><br><br>
+                
+                <!-- phone -->
+
                 <label for="number">Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="tel" name="Phone" id="number" required title="write only numbers"><br><br>
+                
+                <!-- password -->
+                
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(.{8,})" required title=" - At least 1 digit  - At least 1 lowercase letter  - At least 1 uppercase letter  - At least 1 special character  - Minimum 8 characters"><br><br>
                 <i class="fa fa-eye-slash" aria-hidden="true"></i>
+               
                 <button>Submit</button>
             </b>
         
             </form>
-
+               <center><p><B>Thank You For Visiting This Website</B></p>
+                        <p>Our team will contact you soon for more information if you register the given form </p></center> 
         </fieldset><br><br>
         <hr>
         
+        <!-- footer -->
+
         <footer>
            <center> <p>&copy; Athul K 2024  </p></center>
         </footer>
