@@ -8,7 +8,7 @@
 <body>
     <blockquote>
     <header>
-        <center><img src="./images/Kerala.jpg" alt="" height="50px" id="top"></center>
+        <center><img src="./images/Kerala.jpg" alt="" height="80px" id="top"></center>
         <nav>
             
               <a href="#" id="home">Home</a>&nbsp;&nbsp;
@@ -316,16 +316,48 @@
             <legend align="center"><h2 id="contact">Contact Us</h2></legend>
             
             <form action="#">
-              <b>  <label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <b><label for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" name="name" id="name" pattern="[a-zA-Z0-9_]{5,15}" title="write english alphabets A-Z a-z, minimum 5 letters" required><br><br>
+                <label>Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+
+                    <label for="other">Other:</label>
+                    <input type="radio" id="other" name="gender" value="other" required><br><br>
+                <label for="district">District</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="district" id="district" required>
+                    <option value="">Select a district</option>
+                    <option value="district">Kasargode</option>
+                    <option value="district">Kannur</option>
+                    <option value="district">Kozhikode</option>
+                    <option value="district">wayanad</option>
+                    <option value="district">Malappuram</option>
+                    <option value="district">Palakkad</option>
+                    <option value="district">Thrissur</option>
+                    <option value="district">Ernakulam</option>
+                    <option value="district">Idukki</option>
+                    <option value="district">Pathanamthitta</option>
+                    <option value="district">kottayam</option>
+                    <option value="district">Alappuzha</option>
+                    <option value="district">Kollam</option>
+                    <option value="district">Thiruvananthapuram</option>
+                </select><br><br>
+                
+
                 <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="email" name="email" id="email" required  title="Give a valid email include @gmail.com"><br><br>
                 <label for="number">Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="tel" name="Phone" id="number" required title="write only numbers"><br><br>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(.{8,})" required title=" - At least 1 digit  - At least 1 lowercase letter  - At least 1 uppercase letter  - At least 1 special character  - Minimum 8 characters"><br><br>
-                <i class="fa fa-eye-slash" aria-hidden="true"></i></b>
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
                 <button>Submit</button>
+            </b>
+        
             </form>
 
         </fieldset><br><br>
